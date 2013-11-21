@@ -1,4 +1,8 @@
 # Japanese TrueType font
-%w{ fontconfig ttf-takao }.each do |pkg|
+%w{ fontconfig fonts-ipaexfont }.each do |pkg|
   package pkg
+end
+
+cookbook_file "fonts.conf" do
+  path "/etc/fonts/fonts.conf"
 end
