@@ -1,4 +1,4 @@
-src_filename = "phantomjs-1.9.1-linux-x86_64"
+src_filename = "phantomjs-1.9.2-linux-x86_64"
 src_filepath = "#{Chef::Config['file_cache_path']}/#{src_filename}.tar.bz2"
 extract_path = "#{Chef::Config['file_cache_path']}/#{src_filename}"
 install_path = "/usr/local/bin"
