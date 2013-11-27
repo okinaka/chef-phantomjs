@@ -1,2 +1,8 @@
-chef-phantomjs
-==============
+phantomjs Cookbook
+==================
+Install phantomjs.
+
+Requirements
+------------
+### Platforms
+- Debian
