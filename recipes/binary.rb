@@ -1,4 +1,4 @@
-src_filename = "phantomjs-1.9.2-linux-x86_64"
+src_filename = "phantomjs-1.9.7-linux-x86_64"
 src_filepath = "#{Chef::Config['file_cache_path']}/#{src_filename}.tar.bz2"
 extract_path = "#{Chef::Config['file_cache_path']}/#{src_filename}"
 install_path = "/usr/local/bin"
@@ -6,7 +6,7 @@ install_path = "/usr/local/bin"
 package "bzip2"
 
 remote_file src_filepath do
-  source "https://phantomjs.googlecode.com/files/#{src_filename}.tar.bz2"
+  source "https://bitbucket.org/ariya/phantomjs/downloads/#{src_filename}.tar.bz2"
   action :create_if_missing
 end
 
