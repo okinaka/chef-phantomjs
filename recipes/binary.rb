@@ -15,7 +15,6 @@ bash 'extract' do
   code <<-EOH
     tar xjf #{src_filepath}
     cp #{extract_path}/bin/phantomjs #{install_path}
-    cp #{extract_path}/examples/rasterize.js /tmp/
   EOH
   not_if { ::File.exists?(extract_path) }
 end
